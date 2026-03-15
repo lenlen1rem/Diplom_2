@@ -6,7 +6,7 @@ from urls import URL, Endpoints
 from data import StatusCode, TextResponse
 
 class TestCreateUser:
-    @allure.title('Unique user creation test')
+    @allure.title('Тест на создание пользователя')
     def test_create_user(self, create_user):
         response = create_user
         assert response[1].json().get("success") is True
